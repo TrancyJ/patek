@@ -1,0 +1,113 @@
+.form {
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.form>.clearfix>.subscribe_close {
+    display: inline-block;
+    float: right;
+    font-size: 32px;
+    color: #a8927b;
+    border: 1px solid #a8927b;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.form>.clearfix>.subscribe_close:hover {
+    color: #fff;
+    background-color: #a8927b;    
+    border: 1px solid #a8927b;
+}
+
+.form>p {
+    color: #a8927b;
+    font-size: 16px;
+}
+
+.form>p>span {
+    color: #fff;
+    font-size: 18px;
+}
+
+.form>p>span.quote {
+    color: #F95112;
+    font-size: 12px;
+}
+
+.form>.row {
+    margin-bottom: 20px;
+}
+
+.form>.row>label>.orange {
+    color: #F95112;
+}
+
+.form>.row>label {
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+}
+
+.form>.row>.input {
+    width: 70%;
+    height: 30px;
+    outline: none;
+    padding: 10px 20px;
+    background-color: #a8927b;
+    border: 1px solid #a8927b;
+    color: #333;
+}
+
+.form>.row>.agree {
+    width: 70%;
+    height: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.form>.row>.agree:before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    content: "";
+    border: 2px solid #a8927b;
+    background-color: #8C7A66;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.form>.row>.agree.active:before {
+    content: "\2714";
+}
+
+.form>.cmds>.btn {
+    text-decoration: none;
+    border: 1px solid;
+    display: inline-block;
+    width: 230px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.form>.cmds>.btn.reset {
+    color: #a8927b;
+}
+
+.form>.cmds>.btn.reset:hover {
+    background-color: #a8927b;
+    color: #fff;
+    border-color: #a8927b;
+}
+
+.form>.cmds>.btn.sub {
+    color: #fff;
+}
+
+.form>.cmds>.btn.sub:hover {
+    color: #333;
+    background-color: #fff;
+    border-color: #fff;
+}

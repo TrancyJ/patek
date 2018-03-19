@@ -1,0 +1,411 @@
+section>.banner_bg{
+    height:393px;
+    color:#fff;
+    padding:0px;
+    position:relative;
+    background:url(../img/instructions/ownerregistration_1600.jpg) no-repeat;
+    background-size:cover;
+
+}
+
+
+.container>.row>div>i{
+    color:#F95112;
+    font-size:12px;
+}
+.menu{
+    display:inline-block;
+    height:70px;
+    line-height:70px;
+    width:200px;
+    color:#a8927b;
+}
+
+.menu.active{
+    background:rgba(70,53,40,0.09)
+}
+.fistep{
+    margin-top:90px;
+}
+.fistep~p{
+    margin:30px 0;
+}
+.search-row{
+    line-height:40px;
+    height:40px;
+}
+.search-container{
+    position:relative;
+}
+
+.search-container>.search{
+    width:100%;
+    border-radius:25px 25px 25px 25px;
+    height:40px;
+    border:none;
+    outline:none;
+    background:#F3EFEC;
+}
+.search-container>.glyphicon-search{
+    position:absolute;
+    top:13px;
+    right:30px;
+    font-size:14px;
+    cursor:pointer;
+    color:#a8927b;
+}
+.search-container>.clear_search{
+    position:absolute;
+    top:5px;
+    right:50px;
+    width :30px;
+    height:30px;
+    cursor:pointer;
+}
+section>.set{
+    padding:0;
+    display:none;
+}
+section>.direction{
+    margin:40px 0;
+}
+/*手风琴样式*/
+.accordion{
+    width:100%;
+    margin:0 auto;
+}
+.accordion>.title {
+    background: #eee;
+    padding: 47px 55px 50px;
+    font-size: 1.2em;
+    color: #463527;
+    cursor: pointer;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #d9d2ca 0%, #e8e5e0 20%);
+    position:relative;
+}
+.accordion>.content{
+    border-left:1px solid #eee;
+    border-right:1px solid #eee;
+    background:#e8e5e0;
+}
+.accordion>:last-child{
+    border-bottom:1px solid #eee;
+}
+.accordion>.content.fade{
+    height:0;
+    opacity:0;
+    overflow:hidden;
+    transition:all .5s linear;
+}
+.accordion>.content.fade.in{
+    height:auto;
+    opacity:1;
+}
+/*手风琴样式end*/
+.arrow{
+    position:absolute;
+    box-sizing:border-box;
+    top:30%;
+    right:3%;
+
+}
+.arrow>img{
+    width:40px;
+    height:40px;
+    transform:rotate(-90deg);
+}
+
+/*公共下拉框样式*/
+.accordion .label{
+    font-size:14px;
+    width:90px;
+    color:#333;
+    font-weight:normal;
+    display:inline-block;
+    text-align:left;
+}
+.accordion .dropdown-list{
+    display:inline-block;
+    margin-bottom:5px;
+    position:relative;
+}
+.accordion .dropdown-list input{
+    cursor:pointer;
+}
+.accordion .dropdown-list .img{
+    position:absolute;
+    width:20px;
+    top:6px;
+    right:5px;
+    background:#CAC5C1;
+}
+.accordion .dropdown-list .dropdown-down.downorup{
+    display:none;
+}
+.accordion .dropdown-list ul.values{
+    position:absolute;
+    background:#cac5c1;
+    height:0px;
+    width:100%;
+    overflow:auto;
+    transition:all 0.5s linear;
+    z-index:1;
+    list-style: none;
+    padding:0;
+}
+.accordion .dropdown-list ul.values.show{
+    height:120px;
+}
+.accordion .dropdown-list ul.values li{
+    height:40px;
+    padding-left:20px;
+    line-height:40px;
+}
+.accordion .dropdown-list ul.values li:hover{
+    background:#fff;
+}
+/*floor1下拉框样式*/
+
+.accordion .floor1 .form-menu{
+    border-right:1px solid #ccc;
+}
+.accordion .floor1 .dropdown-container{
+    padding:25px;
+    border-bottom:1px solid #ccc
+}
+
+.accordion .floor1 .dropdown-list input{
+    width:270px;
+}
+.accordion .btns {
+    margin-top:25px;
+}
+/*end*/
+/*滑动模块*/
+@media screen and (min-width:768px){
+    .accordion .floor1 .slide-box{
+        background:url('../img/instructions/stylo_correcteur_R_png24_500x234pxl.png') no-repeat 615px 335px;
+        height:450px;
+        overflow:hidden;
+        position: relative;
+    }
+    .accordion .floor1 .slide-container{
+        overflow-x: hidden;
+        overflow-y:auto;
+        width:300%;
+        position:relative;
+        height: 400px;
+        left:0px;
+        transition:all 0.5s linear;
+    }
+    .accordion .floor1 .slide-container .slide{
+        position:absolute;
+        width:33.333333334%;
+
+    }
+    .accordion .floor1 .slide-container .slide-1{
+        left:0%;
+    }
+    .accordion .floor1 .slide-container .slide-2{
+        left:33.3333333334%;
+    }
+    .accordion .floor1 .slide-container .slide-3{
+        left:66.6666666667%;
+    }
+    .accordion .nav-point{
+        margin-bottom:50px;
+    }
+    .accordion .nav-point ul{
+        width:150px;
+        margin:auto;
+    }
+    .accordion .nav-point ul li{
+        width:15px;
+        height:15px;
+        border-radius:50%;
+        background:#fff;
+        float:left;
+        margin:10px;
+        cursor:pointer;
+    }
+    .accordion .nav-point ul li.checked{
+        background:#aaa;
+    }
+    .accordion .moonphase-text{
+        padding:30px 100px;
+        font-size: 17px;
+        line-height: 24px;
+        column-count: 2;
+        column-gap: 45px;
+    }
+}
+@media screen and (max-width:767px){
+    .accordion .nav-point{
+        display:none;
+    }
+    .accordion .floor1 .slide{
+        border-top:1px solid #aaa;
+    }
+    .accordion .moonphase-text{
+        padding:30px 100px;
+        font-size: 17px;
+    }
+}
+
+/*图片*/
+.accordion  .moon-container{
+    width:340px;
+    height:340px;
+    position:relative;
+    margin:0 auto;
+}
+.accordion .moon-container>img{
+    position:absolute;
+}
+.accordion .moon-container .star-moon{
+    transition:all 0.3s linear
+}
+.accordion .sky-container{
+    width:300px;
+    height:360px;
+    position:relative;
+}
+.accordion .sky-container>img{
+    position:absolute;
+}
+.accordion  .sky-container>img.outSky{
+    z-index:1;
+}
+.accordion  .sky-container>img.innerMoon{
+    transform-origin: 62% 45%;
+    transform:rotate(65deg);
+    transition:all 0.3s linear;
+}
+
+ .set input{
+    background:#cac5c1;
+    border:none;
+    outline:none;
+    height:42px;
+    padding-left:20px;
+}
+
+/*floor1滑动模块文字部分*/
+.accordion .fullmoon-title{
+    width:300px;
+    margin:30px auto 20px;
+    
+}
+.accordion .fullmoon-date{
+    display:flex;
+    width:300px;
+    flex-wrap:wrap;
+    margin:0 auto
+}
+.accordion .fullmoon-date div{
+    width:120px;
+}
+
+
+/*floor2*/
+.accordion .floor2 .row{
+    margin:40px 0;
+}
+/*floor2表格*/
+.accordion .floor2 .table-container table{
+    margin:0 auto;
+}
+.accordion .floor2 .table-container table tr td{
+    width:110px;
+    height:40px;
+    font-size:1em
+}
+.accordion .floor2 .table-container table tr .this-year{
+    background:#F95112
+}
+.accordion .floor2 .table-container table .leap-year{
+    font-weight:bold;
+}
+.accordion .floor2 .table-container table .odd{
+    background:#fff
+}
+/*floor2下拉菜单*/
+.accordion .floor2 .label{
+    width:20%;
+    font-weight:bold;
+}
+
+.accordion .floor2 .dropdown-list{
+    width:65%;
+}
+.accordion .floor2 .dropdown-list input,.accordion .floor2 .dropdown-list ul.values{
+    width:100%;
+}
+
+/*floor2下拉菜单end*/
+/*floor2按钮*/
+
+.accordion .floor2 .btn-container{
+    margin-left:21%;
+    width:65%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.accordion .floor2 .btn-container .fl2-btn{
+    margin:10px 0;
+}
+.accordion .floor2 .btn-container .leap-year-result{
+    text-align:center;
+    font-weight:bold;
+    height:40px;
+    line-height: 40px;
+    border-radius: 2px;
+    border:1px solid #a8927b;
+    width:100%
+}
+/*floor2按钮end*/
+
+/*floor3*/
+/*floor3 dropdown*/
+
+
+/*floor3 btn*/
+.accordion .floor3 .btn-container {
+    margin:10px 0px 10px 80px;
+}
+.accordion .floor3 .btn-container button{
+    margin-top:5px;
+}
+/*floor3 右侧文字部分*/
+
+.accordion .floor3 .text-content{
+    height:600px;
+    overflow:hidden;
+    position:relative;
+}
+.accordion .floor3 .text-content .orange{
+    color:#F95112;
+}
+.accordion .floor3 .move-text{
+    position:absolute;
+    transition:all 0.1s linear;
+}
+.accordion .floor3  .text-cover{
+    position:relative;
+    top:-50px;
+    height:50px;
+    width:100%;
+    background-image:linear-gradient(to bottom,rgba(232,229,224,0) 0%,rgba(232,229,224,1));
+}
+.accordion .floor3 .text-btn{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#fff;
+    display:inline-block;
+    margin:0 20px 20px 0;
+    cursor:pointer;
+}

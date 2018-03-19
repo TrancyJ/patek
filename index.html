@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patek Philippe SA | 百达翡丽官网 </title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/PatekGrid.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+</head>
+<body>
+<div id="blurred_div"></div>
+<!--头部引入-->
+<header id="header"></header>
+<section class="section-content"></section>
+<div class="main_breadcrumb hidden_xs hidden_sm hidden_md ">
+  <ul class="breadcrumb_container">
+    <li class="last_element">Home</li>
+  </ul>
+</div>
+<!--轮播视频-->
+<video  id="myvideo" width="100%">
+  你的浏览器不支持HTML5播放此视频
+  <span style="white-space:pre">    </span><!-- 支持播放的文件格式 -->
+  <source src="img/video/Patek%20Biography_1920X770.mp4" type='video/mp4' />
+
+</video>
+<script src="js/jquery.js"></script>
+<script language="javascript">
+    $(document).ready(function(){
+        video.play();
+    });
+
+    var vList = [
+        'img/video/pp-dotcom-heart-teaser-1920x770.mp4',
+        'img/video/Patek_BW2017_News_5072R_1920x770_no_legend_encode.mp4',
+        'img/video/Patek_BW2017_News_5320G_1920x770_no_legend_encode.mp4',
+        'img/video/Patek_BW2017_News_6006G_1920x770_no_legend_encode.mp4',
+        'img/video/Patek_BW2017_News_7130G_1920x770_no_legend_encode.mp4',
+        'img/video/Patek%20Biography_1920X770.mp4',
+    ]; // 初始化播放列表
+    var vLen = vList.length;
+    var curr = 0;
+    var video = document.getElementById("myvideo");
+    video.addEventListener('ended', function(){
+        play();
+    });
+
+    function play() {
+        video.src = vList[curr];
+        video.load();
+        video.play();
+        curr++;
+        if(curr >= vLen){
+            curr = 0; //重新循环播放
+        }
+
+    }
+
+
+
+</script>
+<!--底下三张图-->
+<section class="wrapper">
+
+  <div class="container">
+    <div class="max_width row">
+      <section class="bloc_new col_xs_12 col_sm_6 col_md_4 left_sm_device">
+
+        <div class="thumbnail_picture">
+          <a class="GTMgotoPage" data-format="news"  href=" ">
+            <picture class="GTMgotoPage" data-format="news" data-otherpage="company/news/only-watch-2017">
+              <source data-srcset="img/thumbnail_300.jpg 1x, img/thumbnail_300@2x.jpg 2x" media="(min-width: 0px) and (max-width: 374px)" srcset="img/thumbnail_300.jpg 1x, img/thumbnail_300@2x.jpg 2x">
+              <source data-srcset="img/thumbnail_500.jpg 1x, img/thumbnail_500@2x.jpg 2x" media="(min-width: 375px) and (max-width: 749px)" srcset="img/thumbnail_500.jpg 1x, img/thumbnail_500@2x.jpg 2x">
+              <source data-srcset="img/thumbnail_500@2x.jpg 1x, img/thumbnail_500@2x.jpg 2x" media="(min-width: 750px)" srcset="img/thumbnail_500@2x.jpg 1x, img/thumbnail_500@2x.jpg 2x">
+              <img data-srcset="img/thumbnail_500@2x.jpg 1x, img/thumbnail_500@2x.jpg 2x" class=" lazyloaded" srcset="img/thumbnail_500@2x.jpg 1x, img/thumbnail_500@2x.jpg 2x">
+            </picture>
+            <div class="arrow_box GTMgotoPage" data-format="news" >
+              <div class="arrow GTMgotoPage" data-format="news" ></div>
+            </div>
+          </a>
+        </div>
+        <h2 dir="ltr">Only Watch 2017 / Geneva – Auction results</h2>
+      </section>
+      <section class="bloc_new col_xs_12 col_sm_6 col_md_4 right_sm_device">
+        <div class="thumbnail_picture">
+          <a class="GTMgotoPage" data-format="news"  href=" ">
+            <picture class="GTMgotoPage" data-format="news" >
+              <source data-srcset="img/thumbnail_300.jpg 1x, img/thumbnail_300@2x.jpg 2x" media="(min-width: 0px) and (max-width: 374px)" srcset="img/thumbnail_300.jpg 1x, img/thumbnail_300@2x.jpg 2x">
+              <source data-srcset="img/thumbnail_600.jpg 1x, img/thumbnail_600@2x.jpg 2x" media="(min-width: 375px) and (max-width: 749px)" srcset="img/thumbnail_600.jpg 1x, img/thumbnail_600@2x.jpg 2x">
+              <source data-srcset="img/thumbnail_600@2x.jpg 1x, img/thumbnail_600@2x.jpg 2x" media="(min-width: 750px)" srcset="img/thumbnail_600@2x.jpg 1x, img/thumbnail_600@2x.jpg 2x">
+              <img data-srcset="img/thumbnail_600@2x.jpg 1x, img/thumbnail_600@2x.jpg 2x" class=" lazyloaded" srcset="img/thumbnail_600@2x.jpg 1x, img/thumbnail_600@2x.jpg 2x">
+            </picture>
+            <div class="arrow_box GTMgotoPage" data-format="news" >
+              <div class="arrow GTMgotoPage" data-format="news" ></div>
+            </div>
+          </a>
+        </div>
+        <h2 dir="ltr">百达翡丽 AQUANAUT REF. 5168G</h2>
+        <div class="line visible_sm visible_xs"></div>
+      </section>
+      <div class="line_col col_sm_12 col_xs_12 visible_md ">
+        <div class="line"></div>
+      </div>
+      <section class="bloc_new col_xs_12 col_sm_6 col_md_4 left_sm_device ">
+
+        <div class="thumbnail_picture">
+          <a class="GTMgotoPage" data-format="news"  href=" ">
+            <picture class="GTMgotoPage" data-format="news" >
+              <source data-srcset="img/thumbnail_300.jpg 1x, img/thumbnail_300@2x.jpg 2x" media="(min-width: 0px) and (max-width: 374px)" srcset="img/thumbnail_300.jpg 1x, img/thumbnail_300@2x.jpg 2x">
+              <source data-srcset="img/thumbnail_700.jpg 1x, img/thumbnail_700@2x.jpg 2x" media="(min-width: 375px) and (max-width: 749px)" srcset="img/thumbnail_700.jpg 1x, img/thumbnail_700@2x.jpg 2x">
+              <source data-srcset="img/thumbnail_700@2x.jpg 1x, img/thumbnail_700@2x.jpg 2x" media="(min-width: 750px)" srcset="img/thumbnail_700@2x.jpg 1x, img/thumbnail_700@2x.jpg 2x">
+              <img data-srcset="img/thumbnail_700@2x.jpg 1x, img/thumbnail_700@2x.jpg 2x" class=" lazyloaded" srcset="img/thumbnail_700@2x.jpg 1x, img/thumbnail_700@2x.jpg 2x">
+            </picture>
+            <div class="arrow_box GTMgotoPage" data-format="news" >
+              <div class="arrow GTMgotoPage" data-format="news" ></div>
+            </div>
+          </a>
+        </div>
+        <h2 dir="ltr">百达翡丽从 1839 年创立至今的发展历史..</h2>
+        <div class="line visible_sm visible_xs"></div>
+      </section>
+    </div>
+    <div class="max_width bloc_more_news">
+      <div class="line"></div>
+      <a class="GTMgotoPage btn rect bronze text" data-format="news"  href="news.html " dir="ltr">
+        更多资讯
+      </a>
+    </div>
+  </div>
+</section>
+<!--页尾引入-->
+<footer id="footer"></footer>
+<script src="js/jquery.js"></script>
+<script src="js/loadheader.js"></script>
+</body>
+</html>

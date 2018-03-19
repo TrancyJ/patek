@@ -1,0 +1,298 @@
+// 面包屑
+.breadcrumb_wrapper {
+	background: rgba(255,255,255,0.1);
+	position: absolute;
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	top: 0;
+	z-index: 1;
+
+	>.breadcrumb_list {
+		display: inline-block;
+		line-height: 36px;
+		padding: 0;
+		margin: 0;
+
+		>li {
+			float: left;
+		}
+	}
+}
+
+// 大背景图
+.banner_bg {
+	position: relative;
+	background-image: url(../img/salon/salon_1600.jpg);
+	background-size:cover;
+	padding: 49/160*50% 0;
+	text-align: center;
+	color: #fff;
+	
+	>.banner_text {
+		display: inline-block;
+		padding: 0 25%;
+	}
+}
+
+//tab导航栏
+.tab_wrapper {
+	text-align: center;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+
+	>.tab {
+		display: inline-block;
+		margin: 0;
+		padding-left: 0;
+
+		>li {
+			float: left;
+
+			>a {
+				display: inline-block;
+				width: 230px;
+				height: 70px;
+				line-height: 70px;
+				text-decoration: none;
+				color: #a8927b;
+
+				&:hover {
+					color: #333;
+				}
+			}
+		}
+	}
+}
+
+// 主体内容
+.container_wrapper {
+	display: none;
+
+	&:target {
+		display: block;
+	}
+
+	>.main {
+		padding: 0 15%;
+		margin-top: 80px;
+		text-align: center;
+		
+		> h2 {
+			color: #ab947d;
+			font-weight: normal;
+		}
+	
+		> p {
+			color: #463527;
+		}
+
+		>.paragraph {
+			padding: 0 30px;
+		}
+	
+		>.video_wrapper {
+			position: relative;
+	
+			>.history_video1,>.history_video2 {
+				cursor: pointer;
+			}
+	
+			>.video_play {
+				position: absolute;
+				width: 60px;
+				height: 60px;
+				font-size: 60px;
+				color: #666;
+				left: 50%;
+				margin-left: -30px;
+				cursor: pointer;
+				top: 50%;
+				margin-top: -30px;
+				z-index: 0;
+	
+				>i {
+					position: absolute;
+					left: 15px;
+					top: 15px;
+					display: inline-block;
+					width: 30px;
+					height: 30px;
+					background-color: #fff;
+					z-index: -1;
+				}
+			}
+	
+			>p {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top: 55px;
+				margin-left: -172px;
+				color: #fff;
+				cursor: pointer;
+			}
+	
+			@media screen and (max-width: 991px) {
+				>p {
+					visibility: hidden;
+				}
+			}
+		}
+	
+		>hr {
+			margin: 50px 0;
+		}
+	
+		>.round_image {
+			float: left;
+			width: 30%;
+			height: 30%;
+			padding: 5% 10% 15%;
+
+			>img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+
+		>.p {
+			float: left;
+			width: 50%;
+			margin-top: 7%;
+			text-align: left;
+			line-height: 1.8;
+			font-size: 16px;
+		}
+
+		@media screen and (max-width: 991px) {
+			>.round_image {
+				width: 50%;
+				padding: 0 25%;
+			}
+
+			>.p {
+				width: 100%;
+			}
+		}
+
+	}
+
+	>.salons_geneva_bg1,
+	>.salons_geneva_bg2,
+	>.salons_paris_bg1,
+	>.salons_london_bg1,
+	>.salons_london_bg2 {
+		text-align: center;
+		color: #fff;
+		background-size:cover;
+		padding: 43/135*50% 0;
+		
+		>p {
+			display: inline-block;
+			width: 70%;
+		}
+	}
+
+	>.salons_geneva_bg1 {
+		background-image: url(../img/salon/salon-geneve1_1600.jpg);
+	}
+
+	>.salons_geneva_bg2 {
+		background-image: url(../img/salon/salon-geneve2_1600.jpg);
+	}
+
+	>.salons_paris_bg1 {
+		background-image: url(../img/salon/salon-paris_1600.jpg);
+	}
+
+	>.salons_london_bg1 {
+		background-image: url(../img/salon/salon-london1_1600.jpg);
+	}
+
+	>.salons_london_bg2 {
+		background-image: url(../img/salon/salon-london2_1600.jpg);
+	}
+
+	>.map {
+		height: 120vh;
+
+		#geneva_map {
+			float: left;
+			width: 50%;
+			height: 750px;
+		}
+
+		#paris_map {
+			float: left;
+			width: 50%;
+			height: 750px;
+
+			.BMap_bubble_content>p {
+				margin: 5px;
+			}
+		}
+
+		#london_map {
+			float: left;
+			width: 50%;
+			height: 750px;
+
+			.BMap_bubble_content>p {
+				margin: 5px;
+			}
+		}
+
+		>.map_address {
+			float: left;
+			padding: 5%;
+
+			>header {
+				font-size: 18px;
+				color: #a8927b;
+			}
+
+			>p {
+				margin: 10px 0;
+			}
+
+			>.margin {
+				margin-top: 30px;
+			}
+		}
+
+		@media screen and (max-width: 991px) {
+			#geneva_map {
+				display: none;
+			}
+
+			#paris_map {
+				display: none;
+			}
+
+			#london_map {
+				display: none;
+			}
+
+			>.map_address {
+				width: 90%;
+				text-align: center;
+			}
+		}
+	}
+
+}
+
+
+
+// 订阅
+.subscribe {
+	margin-top: 50px;
+	padding: 0 15%;
+	background-color: #8C7A66;
+	transition: height 0.9s linear;
+	height: 719px;
+}
+.collapsed {
+	height: 0;
+}
+

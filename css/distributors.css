@@ -1,0 +1,83 @@
+
+section>.banner_bg{
+    height:auto;
+    color:#fff;
+    padding:0px;
+    position:relative;
+    background:url(../img/distributors/distributors_1600.jpg) no-repeat;
+    background-size:cover;
+}
+section.section-content>div.banner_bg>.row>.banner_txt{
+    font-size:34px;
+    height:40px;
+    text-align:center;
+    margin:100px 0 50px;
+}
+section>.container>.txts{
+    font-size:16px;
+
+}
+section>.container>.txts p{
+    margin:16px;
+}
+section>.container>.txts a{
+    color:#463527;
+}
+#container{
+    height:350px;
+}
+div.map{
+    position:relative;
+}
+.map_button{
+    position:absolute;
+    top:20px;
+    right:20px;
+}
+.map_button>a>svg{
+    width:48px;
+    height:48px;
+
+}
+.map_button>a{
+    width:48px;
+    height:48px;
+    background:#8c7a66;
+    padding:0;
+    fill:#fff;
+    border-radius:0;
+    margin-left:5px;
+    border:1px solid #8c7a66;
+}
+.map_button>a:hover{
+    background:#fff;
+    fill:#8c7a66;
+}
+.list-agent>div>p{
+    margin-bottom:3px;
+}
+.agent-title{
+    color:#ab947d;
+    font-size:24px;
+    padding:70px 0 50px;
+    border-bottom:1px solid #ab947d;
+}
+.agent-title+div{
+    color: #F95112;
+    font-size: 15px;
+    padding:40px 0px;
+}
+/*列表中按钮*/
+.map-btn{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:url('../img/distributors/carte_1.svg');
+    cursor:pointer;
+    border:1px solid #a8927b;
+    margin-bottom:40px;
+}
+.map-btn:hover{
+    background:url('../img/distributors/carte_1_white.svg');
+    background-color:#a8927b;
+}

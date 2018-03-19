@@ -1,0 +1,78 @@
+/*公共样式区*/
+@media  (min-width:1000px){
+    section.section-content{
+        margin-top:266px;
+    }
+}
+section.section-content{
+    font-size:16px;
+}
+div.row{
+    margin:0px auto;
+}
+
+.clear:after,.clear:before{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+section.section-content .banner_txt{
+    margin:150px 0 100px;
+}
+section.section-content>.banner_bg>.row>div{
+    margin-bottom:16px;
+}
+section.section-content>.container>.txts{
+    font-size:16px;
+
+}
+section.section-content>.container>.txts p{
+    margin:16px;
+}
+section.section-content>.container>.txts a{
+    color:#463527;
+}
+section.section-content>.banner_bg>.row>.banner_breadcrumb{
+    position:absolute;
+    top:0;
+    text-align:center;
+    font-size: 12px;
+    height:35px;
+    line-height:35px;
+    background:rgba(255,255,255,0.1);
+}
+/*公共按钮*/
+.rect{
+    display:inline-block;
+    border-radius:0;
+    padding:10px 15px;
+    width:230px;
+    font-size:16px;
+    text-align:center;
+}
+.rect-midden{
+    width:160px;
+    height:40px;
+}
+.rect-disabled{
+    border:1px solid #b7b0a0;
+    color:#b7b0a0;
+}
+.rect-default{
+    border:1px solid #a8927b;
+    color:#a8927b;
+}
+.rect-default:hover{
+    background:#a8927b;
+    color:#fff;
+}
+.rect-info{
+    border:1px solid #F95112;
+    color:#F95112;
+}
+.rect-info:hover{
+    background:#F95112;
+    color:#fff;
+}
+/*公共按钮end*/

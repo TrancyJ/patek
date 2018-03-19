@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>代理商列表</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/PatekGrid.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/distributors.css">
+
+</head>
+<body>
+<header id="header"></header>
+<section class="section-content">
+    <div class="container-fluid banner_bg clear">
+        <div class="row">
+            <div class="hidden-xs hidden-sm col-md-12  banner_breadcrumb ">销售与服务 &nbsp;&gt;&nbsp; 代理商</div>
+            <div class="col-xs-12 banner_txt ">代理商</div>
+            <div class="col-xs-6 col-xs-offset-3 text-center"><p>百达翡丽的代理商遍布世界各地。</p></div>
+            <div class="col-xs-6 col-xs-offset-3 text-center"><p>请注意，如果未在数据库中找到代理商名称，则说明他们不是百达翡丽的授权代理商。</p></div>
+            <div class="col-xs-6 col-xs-offset-3 text-center"><p><b>使用我们全面的代理商搜索功能，寻找您身边的代理商。数据库提供代理商的名称、地址，某些情况下还有电话和传真号码。首先选择大洲，然后选择国家。</b></p></div>
+        </div>
+    </div>
+    <!--地图-->
+    <div class="map">
+        <div id="container" class="container-fluid"></div>
+        <div id="map_button" class="map_button">
+            <a id="zoomin" class="zoom_in btn">
+                <!--?xml version="1.0" encoding="utf-8"?-->
+                <svg version="1.1" id="plus" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 52.2 52.2" style="enable-background:new 0 0 52.2 52.2;" xml:space="preserve">
+    <g>
+        <path d="M27.8,14.2v9.3h8.9v3.2h-8.9v9.3h-3.4v-9.3h-8.9v-3.2h8.9v-9.3H27.8z"></path>
+    </g>
+    </svg>
+
+            </a>
+            <a id="zoomout" class="zoom_out btn">
+                <!--?xml version="1.0" encoding="utf-8"?-->
+                <svg version="1.1" id="_x2D_" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 52.2 52.2" style="enable-background:new 0 0 52.2 52.2;" xml:space="preserve">
+    <g>
+        <path d="M15.5,26.7v-3.2h21.2v3.2H15.5z"></path>
+    </g>
+    </svg>
+
+            </a>
+            <a id="geoloc" class="zoom_geoloc btn">
+                <!--?xml version="1.0" encoding="utf-8"?-->
+                <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 52.2 52.2" style="enable-background:new 0 0 52.2 52.2;" xml:space="preserve">
+    <g id="Calque_8_-_copie">
+        <g>
+            <path d="M26.1,21c-2.8,0-5.2,2.3-5.2,5.2s2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2S28.9,21,26.1,21z M26.1,29.3
+                c-1.7,0-3.2-1.4-3.2-3.2s1.4-3.2,3.2-3.2s3.2,1.4,3.2,3.2S27.8,29.3,26.1,29.3z"></path>
+            <path d="M44.5,25.1h-4.4c-0.5-7-6.1-12.5-13-13V7.7h-2v4.4c-7,0.5-12.5,6.1-13,13H7.7v2h4.4c0.5,7,6.1,12.5,13,13
+                v4.4h2v-4.4c7-0.5,12.5-6.1,13-13h4.4V25.1z M27.1,38.2v-3.7h-2v3.7c-5.9-0.5-10.5-5.2-11-11h3.7v-2h-3.7c0.5-5.9,5.2-10.5,11-11
+                v3.7h2v-3.7c5.9,0.5,10.5,5.2,11,11h-3.7v2h3.7C37.6,33,33,37.7,27.1,38.2z"></path>
+        </g>
+    </g>
+    </svg>
+
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="agent-title text-center">
+            代理商列表
+        </div>
+        <div class="text-center "><i>(13个结果)</i></div>
+        <div class="row list-agent">
+            <!--<div class="col-xs-12 col-md-3 text-left">-->
+                <!--<p>GERMANY</p>-->
+                <!--<p><b>Deutsche Patek Philippe GmbH</b></p>-->
+                <!--<p>Brienner Str. 12</p>-->
+                <!--<p><span>80333</span><span > München</span></p>-->
+                <!--<p>联系电话： +49 89 2867620</p>-->
+                <!--<p>传真号码： +49 89 28676220</p>-->
+                <!--<div class="map-btn">-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+<!--地图end-->
+</section>
+<footer id="footer"></footer>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/distributors.js"></script>
+<script src="js/loadheader.js"></script>
+<script src="js/bootlint.js"></script>
+<script>
+    bootlint.showLintReportForCurrentDocument([])
+</script>
+</body>
+</html>

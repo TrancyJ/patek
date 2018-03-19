@@ -1,0 +1,182 @@
+.breadcrumb_wrapper {
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+.breadcrumb_wrapper > .breadcrumb_list {
+  display: inline-block;
+  line-height: 36px;
+  padding: 0;
+  margin: 0;
+}
+.breadcrumb_wrapper > .breadcrumb_list > li {
+  float: left;
+}
+.banner_bg {
+  position: relative;
+  background: url(../img/news/banner_1600.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10.75% 0;
+  text-align: center;
+  color: #fff;
+}
+.banner_bg > .banner_text {
+  display: inline-block;
+}
+.banner_bg > .banner_text > h2 {
+  font-weight: normal;
+  color: #ab947d;
+  font-size: 16px;
+}
+.banner_bg > .banner_text > p {
+  font-size: 16px;
+}
+.main {
+  margin-top: 30px;
+  text-align: center;
+}
+.main > .filter > .drop-down {
+  display: inline-block;
+  margin-right: 10px;
+}
+@media screen and (max-width: 991px) {
+  .main > .filter > .drop-down {
+    margin-top: 10px;
+  }
+}
+.main > .filter > .drop-down > .input_select {
+  position: relative;
+}
+.main > .filter > .drop-down > .input_select > input {
+  cursor: pointer;
+  font-size: 16px;
+  color: #8C7A66;
+  width: 210px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px 0 10px;
+  border: 1px solid #d3d3d3;
+  border-radius: 2px;
+  background-color: #eee;
+}
+.main > .filter > .drop-down > .input_select > .icon-arrowdown,
+.main > .filter > .drop-down > .input_select > .icon-arrow-up {
+  position: absolute;
+  cursor: pointer;
+  font-size: 24px;
+  color: #8C7A66;
+  right: 9px;
+  top: 9px;
+}
+.main > .filter > .drop-down > .inputYears_options,
+.main > .filter > .drop-down > .inputMonths_options {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  height: 0;
+  z-index: 5;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transition: height .3s linear;
+}
+.main > .filter > .drop-down > .inputYears_options > li,
+.main > .filter > .drop-down > .inputMonths_options > li {
+  background-color: #eee;
+  color: #8C7A66;
+  padding-left: 10px;
+  width: 242px;
+  line-height: 42px;
+  height: 42px;
+  cursor: pointer;
+  text-align: left;
+}
+.main > .filter > .drop-down > .inputYears_options > li:hover,
+.main > .filter > .drop-down > .inputMonths_options > li:hover {
+  color: #fff;
+  background-color: #8C7A66;
+}
+.main > .filter > .drop-down > .inputYears_options > .selected,
+.main > .filter > .drop-down > .inputMonths_options > .selected {
+  color: #fff;
+  background-color: #8C7A66;
+}
+.main > .filter > .news_close {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  color: #a8927b;
+  border: 1px solid #a8927b;
+  cursor: pointer;
+  vertical-align: top;
+  overflow: hidden;
+}
+@media screen and (max-width: 991px) {
+  .main > .filter > .news_close {
+    display: none;
+  }
+}
+.main > .filter > .news_close:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main > .filter > .news_close:hover {
+  color: #fff;
+  background-color: #a8927b;
+  border: 1px solid #a8927b;
+}
+.main > .grid_container > .row > header {
+  color: #8C7A66;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.main > .grid_container > .row > .hidden {
+  display: none !important;
+}
+.main > .grid_container > .row > .watch_thumbnail > h3 {
+  font-size: 16px;
+  font-weight: normal;
+}
+.main > .grid_container > .row > .watch_thumbnail > a {
+  display: block;
+  width: 100%;
+  height: 62.4%;
+}
+.main > .grid_container > .row > .watch_thumbnail > a > img {
+  display: inline-block;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .main > .grid_container > .row > .watch_thumbnail > .brief {
+    height: 200px;
+  }
+}
+.main > .grid_container > .row > .watch_thumbnail > .brief > h2 {
+  font-size: 18px;
+  color: #ab947d;
+  font-weight: normal;
+}
+.main > .grid_container > .row > .watch_thumbnail > .brief > p {
+  margin: 0;
+  color: #463527;
+  font-size: 16px;
+}
+.main > .grid_container > .row .line {
+  float: left;
+  width: 100%;
+  border-top: 1px solid rgba(168, 146, 123, 0.5);
+  margin: 30px 0;
+}
+.hidden {
+  display: none;
+}

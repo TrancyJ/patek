@@ -1,0 +1,1207 @@
+.brown {
+    color: #463527
+}
+
+.lightbrown {
+    color: #a8927b
+}
+
+.orange {
+    color: #F95112
+}
+
+.brass {
+    color: #E2E1DF
+}
+
+.lightbrass {
+    color: #988574
+}
+
+.grey {
+    color: #939393
+}
+
+.lightgrey {
+    color: #E6E1DB
+}
+
+.lbl_form {
+    color: #463527;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px
+}
+
+.lbl_form sup {
+    color: #F95112;
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 2px;
+    top: -0.2em
+}
+
+.lbl_form.nowrap {
+    white-space: nowrap
+}
+
+label.error {
+    color: #F95112
+}
+
+.dropdown {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    min-width: 200px;
+    position: relative;
+    width: 100%
+}
+
+.dropdown .value {
+    color: #8B7965;
+    cursor: pointer;
+    opacity: 1
+}
+
+.dropdown .value::placeholder, .dropdown .value:-moz-placeholder, .dropdown .value::-moz-placeholder, .dropdown .value:-ms-input-placeholder, .dropdown .value::-webkit-input-placeholder {
+    color: #8B7965;
+    opacity: 1
+}
+
+.dropdown .values {
+    background-color: #F3EFEC;
+    box-sizing: border-box;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    max-height: 0;
+    max-width: 100%;
+    min-width: 100%;
+    overflow-y: hidden;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    width: 100%;
+    z-index: 1;
+    -webkit-overflow-scrolling: touch
+}
+
+.dropdown .values.open {
+    max-height: 320px;
+    overflow: auto
+}
+
+.dropdown .values li {
+    align-items: center;
+    background-color: #F3EFEC;
+    box-sizing: border-box;
+    color: #8B7965;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    height: 30px;
+    opacity: 1.0;
+    padding-bottom: 5px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 5px;
+    position: relative
+}
+
+.dropdown .values li:active, .dropdown .values li:hover, .dropdown .values li.selected {
+    background-color: #8B7965;
+    color: #fff
+}
+
+.dropdown .values li.hidden {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0
+}
+
+.dropdown .img {
+    cursor: pointer;
+    fill: #8B7965;
+    height: 22px;
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    width: 22px
+}
+
+.dropdown .dropdown-up {
+    display: none
+}
+
+.dropdown.small {
+    min-width: initial;
+    width: 80px
+}
+
+.dropdown.month {
+    min-width: initial;
+    width: 100px
+}
+
+.dropdown.year {
+    min-width: initial;
+    width: 140px
+}
+
+.dropdown.open .dropdown-down {
+    display: none
+}
+
+.dropdown.open .dropdown-up {
+    display: block
+}
+
+.dropdown.brown .value {
+    color: #fff;
+    background-color: #a8927b
+}
+
+.dropdown.brown .value::placeholder, .dropdown.brown .value:-ms-input-placeholder {
+    color: #fff
+}
+
+.dropdown.brown .img {
+    fill: #fff
+}
+
+.dropdown.brown .values {
+    background-color: #a8927b
+}
+
+.dropdown.brown .values li {
+    background-color: #a8927b;
+    color: #fff
+}
+
+.dropdown.brown .values li:hover, .dropdown.brown .values li.selected {
+    background-color: #fff;
+    color: #a8927b
+}
+
+.dropdown.grey .value {
+    color: #463527;
+    background-color: #CAC5C1
+}
+
+.dropdown.grey .value::placeholder, .dropdown.grey .value:-ms-input-placeholder {
+    color: #463527
+}
+
+.dropdown.grey .img {
+    fill: #463527
+}
+
+.dropdown.grey .values {
+    background-color: #CAC5C1
+}
+
+.dropdown.grey .values li {
+    background-color: #CAC5C1;
+    color: #463527
+}
+
+.dropdown.grey .values li:hover, .dropdown.grey .values li.selected {
+    background-color: #fff;
+    color: #463527
+}
+
+.dropdown.uppercase input {
+    text-transform: uppercase
+}
+
+.dropdown.uppercase .values li {
+    text-transform: uppercase
+}
+
+.dropdown[value=''] .value, .dropdown[value] .value {
+    font-style: italic
+}
+
+.dropdown:not([value='']) .value {
+    font-style: normal
+}
+
+.dropdown[disabled] {
+    cursor: default;
+    opacity: .4
+}
+
+.dropdown[disabled] .value {
+    cursor: default
+}
+
+.datalist {
+    position: relative;
+    min-width: 200px;
+    display: inline-block
+}
+
+.datalist .options {
+    background-color: #F3EFEC;
+    display: inline-block;
+    left: 0;
+    max-height: 20vh;
+    max-width: 100%;
+    min-width: 100%;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    position: absolute;
+    text-transform: uppercase;
+    top: 2px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    z-index: 1
+}
+
+.datalist .options a {
+    color: #8B7965;
+    cursor: pointer;
+    display: block;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    text-align: left;
+    text-decoration: none;
+    white-space: nowrap
+}
+
+.datalist .options a:hover, .datalist .options a.selected {
+    background-color: #8B7965;
+    color: #F3EFEC
+}
+
+.input_form {
+    -webkit-appearance: none;
+    background-color: #F3EFEC;
+    border: 0;
+    border-radius: 0;
+    color: #8B7965;
+    font-size: 14px;
+    height: 30px;
+    padding-left: 14px;
+    padding-right: 14px;
+    width: calc(100% - 28px)
+}
+
+.input_form.issue {
+    width: 60px
+}
+
+.input_form::placeholder {
+    color: #8B7965;
+    opacity: .7
+}
+
+.input_form.brown {
+    background-color: #a8927b;
+    color: #463527
+}
+
+.input_form.brown::placeholder {
+    color: #463527;
+    opacity: .7
+}
+
+textarea.input_form {
+    height: 75px;
+    padding-top: 14px;
+    padding-top: 14px;
+    resize: none
+}
+
+.input_clear {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 34px
+}
+
+.input_clear img {
+    height: 25px;
+    width: 25px
+}
+
+.input_clear.search {
+    right: 40px
+}
+
+.input_radio {
+    display: block;
+    float: left;
+    margin-left: 3px
+}
+
+.input_radio input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 .4em #fff, 0 0 0 .2em;
+    color: #E6E1DB;
+    cursor: pointer;
+    height: 14px;
+    margin: 0;
+    margin-right: 5px;
+    transition: .2s;
+    width: 14px
+}
+
+.input_radio input[type="radio"]:hover, .input_radio input[type="radio"]:checked {
+    background: #E6E1DB;
+    box-shadow: inset 0 0 0 .5em #fff, 0 0 0 .2em
+}
+
+.input_radio input[type="radio"]:checked {
+    background: #F95112;
+    box-shadow: inset 0 0 0 .3em #fff, 0 0 0 .2em #E6E1DB
+}
+
+.input_radio input[type="radio"]:focus {
+    outline: 0
+}
+
+.input_radio label {
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+    top: -3px
+}
+
+.input_radio.brown input[type="radio"] {
+    background: #a8927b;
+    color: #463527
+}
+
+.input_radio.brown input[type="radio"]:hover, .input_radio.brown input[type="radio"]:checked {
+    background: #E6E1DB;
+    box-shadow: inset 0 0 0 .5em #a8927b, 0 0 0 .2em
+}
+
+.input_radio.brown input[type="radio"]:checked {
+    background: #463527;
+    box-shadow: inset 0 0 0 .3em #a8927b, 0 0 0 .2em #E6E1DB
+}
+
+.input_radio_sep {
+    display: block;
+    float: left;
+    margin-top: -2px;
+    padding-left: 10px;
+    padding-right: 13px
+}
+
+.input.rbtns {
+    padding-top: 15px
+}
+
+.input.rbtns .input_radio {
+    margin-bottom: 8px
+}
+
+.imgbtn {
+    background-color: transparent;
+    border: solid 1px #463527;
+    border-shadow: none;
+    cursor: pointer;
+    display: inline-block;
+    height: 42px;
+    position: relative;
+    width: 52px
+}
+
+.imgbtn .picto {
+    align-items: center;
+    display: table-cell;
+    fill: #463527;
+    justify-content: center;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.imgbtn .picto svg {
+    height: 100%;
+    width: 100%
+}
+
+.imgbtn:hover {
+    background-color: #463527
+}
+
+.imgbtn:hover .picto {
+    fill: #fff
+}
+
+.imgbtn.reset {
+    border: solid 1px #CDBAA9;
+    fill: #CDBAA9
+}
+
+.imgbtn.reset .picto {
+    fill: #CDBAA9
+}
+
+.imgbtn.reset:hover {
+    background-color: #CDBAA9
+}
+
+.imgbtn.reset:hover .picto {
+    fill: #fff
+}
+
+.imgbtn[disabled], .imgbtn:disabled {
+    border: solid 1px #939393
+}
+
+.checkbox[type="checkbox"]:not(:checked), .checkbox[type="checkbox"]:checked {
+    left: -9999px;
+    position: absolute
+}
+
+.checkbox[type="checkbox"]:not(:checked) + label, .checkbox[type="checkbox"]:checked + label {
+    cursor: pointer;
+    display: initial;
+    position: relative;
+    padding-left: 1.95em;
+    padding-top: 4px
+}
+
+.checkbox[type="checkbox"]:not(:checked) + label:before, .checkbox[type="checkbox"]:checked + label:before {
+    background: transparent;
+    border: solid 2px #E6E1DB;
+    border-radius: 2px;
+    content: '';
+    height: 1.25em;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1.25em
+}
+
+.checkbox[type="checkbox"]:not(:checked) + label:after, .checkbox[type="checkbox"]:checked + label:after {
+    color: #a8927b;
+    content: url("../../svg/checkmark.svg");
+    font-size: 1.4em;
+    height: 1em;
+    left: .02em;
+    line-height: .8;
+    position: absolute;
+    top: 0;
+    transition: all .2s;
+    width: 1em
+}
+
+.checkbox[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0)
+}
+
+.checkbox[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1)
+}
+
+.checkbox.brown[type="checkbox"]:not(:checked) + label:before, .checkbox.brown[type="checkbox"]:checked + label:before {
+    border: solid 2px #a8927b
+}
+
+.checkbox.brown[type="checkbox"]:not(:checked) + label:after, .checkbox.brown[type="checkbox"]:checked + label:after {
+    content: url("../../svg/checkmark_brown.svg")
+}
+
+.checkbox.orange[type="checkbox"]:not(:checked) + label:before, .checkbox.orange[type="checkbox"]:checked + label:before {
+    border: solid 2px #a8927b
+}
+
+.checkbox.orange[type="checkbox"]:not(:checked) + label:after, .checkbox.orange[type="checkbox"]:checked + label:after {
+    content: url("../../svg/checkmark_orange.svg")
+}
+
+.formular .step > header, .formular .step > .ctn {
+    display: none
+}
+
+.formular .step > header .sep_line, .formular .step > .ctn .sep_line {
+    border-top: solid 1px rgba(171, 148, 125, 0.5);
+    margin-left: 40px;
+    margin-right: 40px
+}
+
+.formular .step .step_nav {
+    align-items: center;
+    background-color: #E8E5E0;
+    bottom: 0;
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2px;
+    padding-bottom: 22px;
+    padding-top: 23px;
+    text-align: center;
+    width: 100%
+}
+
+.formular .step .step_nav span {
+    color: #ab947d;
+    font-size: 15px;
+    letter-spacing: 3px;
+    line-height: 20px;
+    margin-left: 3px;
+    text-transform: uppercase
+}
+
+.formular .step .step_nav .sub {
+    font-weight: bold
+}
+
+.formular .step .step_nav .img {
+    fill: #ab947d;
+    height: 40px;
+    position: absolute;
+    right: 22px;
+    top: 21px;
+    width: 40px
+}
+
+.formular .step .step_nav .img svg {
+    height: 100%;
+    width: 100%
+}
+
+.formular .step .step_nav .img.bas {
+    display: none
+}
+
+.formular .step .step_nav .img.droite {
+    display: block
+}
+
+.formular .step .step_nav.current {
+    background-color: #F95112
+}
+
+.formular .step .step_nav.current span {
+    color: #fff
+}
+
+.formular .step .step_nav.current .img {
+    fill: #fff
+}
+
+.formular .step .step_nav.current .img.bas {
+    display: block
+}
+
+.formular .step .step_nav.current .img.droite {
+    display: none
+}
+
+.formular .step .page_sct_header {
+    padding-bottom: 25px;
+    padding-top: 45px
+}
+
+.formular .step .lgds {
+    margin-left: 12%;
+    margin-right: 12%;
+    padding-bottom: 18px;
+    padding-top: 10px;
+    text-align: left
+}
+
+.formular .step .lgds p {
+    font-style: italic
+}
+
+.formular .step .lgds .req {
+    color: #F95112;
+    font-size: 13px;
+    font-weight: normal
+}
+
+.formular .step .row {
+    display: inline-block;
+    margin-left: 45px;
+    margin-right: 45px;
+    position: relative;
+    width: calc(100% - 90px)
+}
+
+.formular .step .row > .lbl {
+    align-items: center;
+    display: flex;
+    float: left;
+    min-height: 32px;
+    text-align: left;
+    width: 100%
+}
+
+.formular .step .row > .input {
+    display: inline-block;
+    float: left;
+    padding-bottom: 8px;
+    position: relative;
+    text-align: left;
+    width: 100%
+}
+
+.formular .step .row > .input.rbtns {
+    padding-bottom: 0;
+    padding-top: 8px
+}
+
+.formular .step .row > .col {
+    float: left;
+    padding-bottom: 15px;
+    width: 100%
+}
+
+.formular .step .row > .col .lbl, .formular .step .row > .col .input {
+    text-align: left;
+    width: 100%
+}
+
+.formular .step .row .cols_radio .input_radio {
+    width: 100%
+}
+
+.formular .step .row.hidden {
+    display: none
+}
+
+.formular .step .row_chk > .lbl {
+    display: none
+}
+
+.formular .step .row_chk > .input, .formular .step .row_chk > .input.full {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%
+}
+
+.formular .step .row_intro {
+    padding-bottom: 40px
+}
+
+.formular .step .cmds {
+    box-sizing: border-box;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 27px;
+    position: relative;
+    text-align: center;
+    width: 80%
+}
+
+.formular .step .cmds .bt {
+    left: 0;
+    width: 100%
+}
+
+.formular .step .cmds button:first-child {
+    margin-right: 14px
+}
+
+.formular .step .cmds .btn {
+    margin-bottom: 7px;
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+.formular .step .bt {
+    border-top: solid 1px rgba(168, 146, 123, 0.5);
+    left: 10%;
+    position: absolute;
+    top: 0;
+    width: 80%
+}
+
+.formular .step .msg {
+    padding-bottom: 80px;
+    padding-top: 5px
+}
+
+.formular .step .msg p {
+    font-style: italic;
+    font-weight: normal;
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0
+}
+
+.formular .step .msg .confirm {
+    color: #ab947d
+}
+
+.formular .step .msg .error {
+    color: #F95112
+}
+
+.formular .step.current > header, .formular .step.current .ctn {
+    display: block
+}
+
+.uploader {
+    display: inline-block;
+    width: 100%
+}
+
+.uploader table {
+    border: solid 1px #E6E1DB;
+    border-spacing: 0;
+    width: 100%
+}
+
+.uploader table thead tr td {
+    background-color: #E6E1DB;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 5px;
+    padding-top: 9px
+}
+
+.uploader table thead tr td span {
+    color: #463527;
+    font-size: 14px;
+    position: relative;
+    top: 5px
+}
+
+.uploader table tbody tr td {
+    background-color: transparent;
+    height: 40px;
+    padding-left: 12px;
+    padding-right: 12px
+}
+
+.uploader table tbody tr td span {
+    color: #463527;
+    font-size: 14px;
+    position: relative
+}
+
+.uploader table .filename {
+    text-align: left;
+    width: 80%
+}
+
+.uploader table .filesize {
+    display: none
+}
+
+.uploader table .action {
+    text-align: right;
+    width: 20%
+}
+
+.uploader table .action .imgbtn {
+    border: solid 1px #463527;
+    height: 24px;
+    width: 28px
+}
+
+.uploader table .action .imgbtn img {
+    height: 24px;
+    width: 28px
+}
+
+.uploader table .action .imgbtn:active, .uploader table .action .imgbtn:hover {
+    background-color: transparent
+}
+
+.uploader .feet {
+    display: inline-block;
+    padding-top: 15px;
+    width: 100%
+}
+
+.uploader .feet .add {
+    text-align: center
+}
+
+.uploader .feet .res {
+    text-align: center
+}
+
+.uploader .feet .res .msg_error {
+    color: #F95112;
+    float: left;
+    margin: 0;
+    padding: 0
+}
+
+.banner_form_steps {
+    align-items: center;
+    bottom: 0;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    width: 100%
+}
+
+.banner_form_steps .bgc {
+    background-color: #fff;
+    display: inline-block;
+    left: 0;
+    height: 100%;
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.banner_form_steps .step {
+    padding-bottom: 25px;
+    padding-top: 20px;
+    text-align: center;
+    width: 380px;
+    z-index: 1
+}
+
+.banner_form_steps .step span {
+    color: #494846;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-transform: uppercase
+}
+
+.banner_form_steps .step .sub {
+    font-weight: bold
+}
+
+.banner_form_steps .current {
+    background-color: #F95112
+}
+
+.banner_form_steps .current span {
+    color: #fff
+}
+
+.banner_form_steps.hide {
+    display: none
+}
+
+.payment .card_type {
+    cursor: pointer
+}
+
+.payment .card_type img {
+    border: solid 2px #fff;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 50px
+}
+
+.payment .card_type img.selected {
+    border: solid 2px #F95112
+}
+
+@media (min-width: 500px) {
+    .input_clear.search {
+        top: 35px
+    }
+}
+
+@media (min-width: 750px) {
+    .formular .step .row {
+        margin-left: 12%;
+        margin-right: 12%;
+        width: 76%
+    }
+
+    .formular .step .row > .lbl {
+        width: 25%
+    }
+
+    .formular .step .row > .lbl label {
+        margin-right: 16px
+    }
+
+    .formular .step .row > .input {
+        width: 75%
+    }
+
+    .txtbtn.margin_btn {
+        margin-left: 10px
+    }
+
+    .uploader table .filename {
+        width: 65%
+    }
+
+    .uploader table .filesize {
+        display: table-cell;
+        width: 20%
+    }
+
+    .uploader table .action {
+        width: 15%
+    }
+
+    .input_clear.search {
+        right: 34px;
+        top: 7px
+    }
+}
+
+@media (min-width: 1000px) {
+    .formular .step {
+        display: none;
+        opacity: .0;
+        -moz-transition: opacity .5s ease-in-out;
+        -ms-transition: opacity .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity .5s ease-in-out;
+        transition: opacity .5s ease-in-out
+    }
+
+    .formular .step > header {
+        padding-bottom: 100px;
+        padding-top: 100px
+    }
+
+    .formular .step > .ctn {
+        display: initial;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+        width: 80%
+    }
+
+    .formular .step > .ctn .sep_line {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%
+    }
+
+    .formular .step .step_nav {
+        display: none
+    }
+
+    .formular .step .page_sct_header {
+        padding-bottom: 50px;
+        padding-top: 50px
+    }
+
+    .formular .step .lgds {
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-bottom: 25px;
+        padding-top: 50px
+    }
+
+    .formular .step .row {
+        margin-left: 30px;
+        margin-right: 30px;
+        width: calc(100% - 60px)
+    }
+
+    .formular .step .row > .lbl {
+        padding-bottom: 10px;
+        width: 18%
+    }
+
+    .formular .step .row > .lbl label {
+        margin-left: 38px;
+        margin-right: 16px;
+        top: 12px
+    }
+
+    .formular .step .row > .lbl:first-child label {
+        margin-left: 0
+    }
+
+    .formular .step .row > .input {
+        padding-bottom: 15px;
+        text-align: left;
+        width: 32%
+    }
+
+    .formular .step .row > .input.full {
+        text-align: left;
+        width: 82%
+    }
+
+    .formular .step .row > .col {
+        float: left;
+        padding-bottom: 15px;
+        width: 50%
+    }
+
+    .formular .step .row > .col .lbl, .formular .step .row > .col .input {
+        margin-left: 36px
+    }
+
+    .formular .step .row > .col:first-child .lbl, .formular .step .row > .col:first-child .input {
+        margin-left: 0
+    }
+
+    .formular .step .row .cols_radio {
+        float: left;
+        position: relative;
+        width: 49%
+    }
+
+    .formular .step .row .cols_radio > .input_radio {
+        width: 100%
+    }
+
+    .formular .step .row > .rbtns {
+        padding-top: 8px
+    }
+
+    .formular .step .row_chk > .lbl {
+        display: block
+    }
+
+    .formular .step .row_chk > .input, .formular .step .row_chk > .input.full {
+        padding-top: 0;
+        text-align: left
+    }
+
+    .formular .step .cmds {
+        padding-bottom: 20px;
+        padding-top: 40px
+    }
+
+    .formular .step .cmds .btn {
+        margin-bottom: 0;
+        width: 182px
+    }
+
+    .formular .step .msg {
+        padding-bottom: 120px
+    }
+
+    .formular .step .msg p {
+        font-size: 16px
+    }
+
+    .formular .step.current {
+        display: block;
+        opacity: 1
+    }
+
+    .dropdown .values {
+        top: 42px
+    }
+
+    .dropdown .values li {
+        font-size: 16px;
+        height: 42px;
+        padding-bottom: 5px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 5px
+    }
+
+    .dropdown .img {
+        height: 30px;
+        top: 5px;
+        width: 30px
+    }
+
+    .result {
+        padding-top: 35px
+    }
+
+    .lbl_form {
+        font-size: 16px;
+        line-height: 20px
+    }
+
+    .lbl_form sup {
+        font-size: 18px;
+        margin-left: 2px;
+        top: -0.2em
+    }
+
+    .input_form {
+        font-size: 16px;
+        height: 40px;
+        padding-left: 24px;
+        padding-right: 24px;
+        width: calc(100% - 48px)
+    }
+
+    textarea.input_form {
+        height: 150px;
+        padding-bottom: 14px;
+        padding-top: 14px
+    }
+
+    .input_clear.search {
+        right: 46px
+    }
+
+    .input_radio label {
+        font-size: 16px;
+        margin-left: 9px;
+        top: -2px
+    }
+
+    .input_radio_sep {
+        padding-left: 25px;
+        padding-right: 28px
+    }
+
+    .banner_form_steps {
+        display: flex
+    }
+
+    .uploader .feet {
+        display: table
+    }
+
+    .uploader .feet .add {
+        display: table-cell;
+        text-align: left;
+        width: 200px
+    }
+
+    .uploader .feet .res {
+        display: table-cell;
+        text-align: left;
+        vertical-align: middle;
+        width: auto
+    }
+
+    .uploader .feet .res .msg_error {
+        margin-left: 20px;
+        margin-right: 20px
+    }
+}
+
+@media (min-width: 1200px) {
+    .input_clear.search {
+        right: 52px
+    }
+}

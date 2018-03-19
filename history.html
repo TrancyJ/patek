@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Patek Philippe SA | 传奇历史</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/PatekGrid.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="font/iconfont/iconfont.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/history.css">
+	<script src="js/jquery.js"></script>
+</head>
+<body>
+<!-- 	头部引入 -->
+	<div id="header"></div>
+	<section class="section-content"></section>
+<!-- 	面包屑导航 -->
+	<div class="breadcrumb_wrapper clearfix">
+		<ul class="breadcrumb_list clearfix">
+			<li>百达翡丽 &nbsp;&nbsp;&nbsp;&gt;</li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp; 传奇历史</li>
+		</ul>
+	</div>
+	
+<!-- 	轮播大图 -->
+	<div class="banner_bg">
+		<div class="banner_text">
+			<h1>百达翡丽从 1839 年创立至今的发展历史...</h1>
+		</div>
+	</div>
+
+
+<!-- 	主体内容 -->
+	<div class="main">
+		<h2>百达翡丽辉煌传奇的里程碑</h2>
+		<p>创立于 1839 年的百达翡丽是日内瓦历史最为悠久的独立家族制表企业。凭借绵延近 180 年从未中断的光辉历程，以及闪耀着无尽璀璨光芒的制表历史，百达翡丽从悠久的工艺传承与独特的创新传统中获益良多。从安东尼·百达初识阿德里安·翡丽，到泰瑞·斯登担任总裁，从第一枚怀表到最新的超级复杂功能腕表……敬请探索这些铸就了百达翡丽，乃至整个制表行业历史的里程碑事件。</p>	
+		<div class="video_wrapper">
+			<video src="media/PP_Story_01.mp4" width="100%" height="auto" poster="img/history/videoHistory1_1600.jpg" class="history_video1"></video>
+			<i class="iconfont icon-bofang video_play"><i></i></i>
+		</div>
+		<hr>
+
+		<h2>百达翡丽，制表工坊的源起</h2>
+		<div class="video_wrapper">
+			<video src="media/Archives_Long_EN.mp4" width="100%" height="auto" poster="img/history/videoHistory2_1600.jpg" class="history_video2"></video>
+			<i class="iconfont icon-bofang video_play"><i></i></i>
+		</div>
+		<hr>
+
+		<h2>本页即将呈现：百达翡丽的完整历史进程</h2>
+		<h2>订阅新闻通讯以随时获知最新资讯</h2>
+		<p>[ <span class="history_subscribe">订阅新闻通讯</span> ]</p>
+
+	</div>
+<!-- 		订阅新闻通讯 -->
+	<iframe class="subscribe collapsed" scrolling="no" src="subscribe.html" width="70%" frameborder="0"></iframe>
+	
+<!-- 	底部引入 -->
+	<div id="footer"></div>
+	<script>
+		window.onload = function() {
+			var iframe = document.querySelector('.subscribe')
+			var childDocument = iframe.contentWindow.document
+
+			var toggleVideo = function() {
+				var video = this.children[0]
+				if (video.paused) {
+					video.setAttribute('controls', '')
+					video.play()
+					this.children[1].style.visibility = 'hidden'
+				} else {
+					video.pause()
+				}
+			}
+			
+			//点击播放视频
+			document.querySelectorAll('.video_wrapper')[0].addEventListener('click', toggleVideo)
+			document.querySelectorAll('.video_wrapper')[1].addEventListener('click', toggleVideo)
+
+			//隐藏iframe
+			childDocument.querySelector('.subscribe_close').addEventListener('click', function() {
+				iframe.className += ' collapsed'
+			})
+
+			//展开iframe
+			document.querySelector('.history_subscribe').addEventListener('click', function(e) {
+				// 90表示页头的高度
+				var distance = iframe.offsetTop - 90
+				var isCollapsed = iframe.classList.contains('collapsed')
+				var isCollapsedReg = /\s*collapsed\s*/
+				if (isCollapsed) {
+					iframe.className = iframe.className.replace(isCollapsedReg, ' ')
+					setTimeout(function() {
+						window.scrollTo(0, distance)
+					}, 1000)
+				}
+				else iframe.className += ' collapsed'
+			})
+		}
+	</script>
+<script src="js/loadheader.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+section{
+    font-size:16px;
+}
+div.row{
+    margin:50px auto;
+}
+section>.banner_bg{
+    height:auto;
+    color:#fff;
+    padding:0px;
+    position:relative;
+    background:url(../img/archives/archives_1600.jpg) no-repeat;
+    background-size:cover;
+}
+.clear:after,.clear:before{
+    content:"";
+    display:table;
+    clear:both;
+}
+section>.banner_bg>.row>.banner_breadcrumb{
+    position:absolute;
+    top:0;
+    text-align:center;
+    font-size: 12px;
+    height:35px;
+    line-height:35px;
+    background:rgba(255,255,255,0.1);
+}
+section>.banner_bg>.row>.banner_txt{
+    font-size:34px;
+    height:40px;
+    text-align:center;
+    margin:100px 0 100px;
+}
+section>.container>.txts{
+    font-size:16px;
+
+}
+section>.container>.txts p{
+    margin:16px;
+}
+section>.container>.txts a{
+    color:#463527;
+}
+.container{
+    border-top:1px solid #ccc;
+}
+.container>.row>div>.rect{
+    border-radius:0;
+    padding:10px 15px;
+    width:230px;
+    font-size:16px;
+}
+.rect-default{
+    border:1px solid #a8927b;
+    color:#a8927b;
+}
+.rect-default:hover{
+    background:#a8927b;
+    color:#fff;
+}
+.rect-info{
+    border:1px solid #F95112;
+    color:#F95112;
+}
+.rect-info:hover{
+    background:#F95112;
+    color:#fff;
+}
+.col-language>input[type="radio"]{
+    background:#F95112;
+    box-sizing: border-box;
+    padding: 0;
+    color: #E6E1DB;
+    cursor: pointer;
+    height: 14px;
+    margin: 0;
+    margin-right: 5px;
+    transition: .2s;
+    width: 14px;
+    box-shadow: inset 0 0 0 0.5em #fff, 0 0 0 0.2em;
+    border-radius: 50%;
+
+}
+.title{
+    color:#a8927b;
+    font-size:24px;
+}

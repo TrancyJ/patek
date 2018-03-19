@@ -1,0 +1,82 @@
+section> .banner_bg{
+    height:auto;
+    color:#fff;
+    padding:0px;
+    position:relative;
+    background:url(../img/product_list/grandes_complications_1200.jpg) no-repeat;
+    background-size:cover;
+    min-height:367px;
+}
+div.search-row{
+    line-height:40px;
+    height:40px;
+    margin:40px 0;
+}
+.search-container{
+    position:relative;
+}
+ .search-text{
+    color:#463527;
+    font-weight:bold;
+}
+.search-container>.search{
+    width:100%;
+    border-radius:25px 25px 25px 25px;
+    height:40px;
+    border:none;
+    outline:none;
+    background:#F3EFEC;
+    padding-left:20px;
+}
+.search-container>.glyphicon-search{
+    position:absolute;
+    top:13px;
+    right:30px;
+    font-size:14px;
+    cursor:pointer;
+    color:#a8927b;
+}
+.search-container>.clear_search{
+    position:absolute;
+    top:5px;
+    right:50px;
+    width :30px;
+    height:30px;
+    cursor:pointer;
+}
+.search-container .down-list{
+    height:0px;
+    overflow-y:scroll;
+    transition:all 0.3s linear;
+}
+.search-container .down-list li{
+    background:#F3EFEC;
+}
+.search-container .down-list li:hover{
+    background:#ddd;
+}
+.img-link{
+    width:180px;
+    height:300px;
+}
+.img-link img{
+    width:180px;
+    height:222px;
+}
+.watch-name{
+    margin-top: 10px;
+    color: #463527;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+.watch-style{
+    font-size: 12px;
+    color: #a8927b;
+    font-style: italic;
+}
+@media (max-width: 334px){
+    .col-xxs-12{
+        width:100%
+    }
+}

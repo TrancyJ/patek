@@ -1,0 +1,299 @@
+// 面包屑
+.breadcrumb_wrapper {
+	background: rgba(255,255,255,0.1);
+	position: absolute;
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	top: 0;
+	z-index: 1;
+
+	>.breadcrumb_list {
+		display: inline-block;
+		line-height: 36px;
+		padding: 0;
+		margin: 0;
+
+		>li {
+			float: left;
+		}
+	}
+}
+
+// 大背景图
+.banner_bg {
+	position: relative;
+	background: url(../img/news/banner_1600.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 43/160*40% 0;
+	text-align: center;
+	color: #fff;
+	
+	>.banner_text {
+		display: inline-block;
+	}
+
+	>.p_subscribe {
+		cursor: pointer;
+		position: absolute;
+		width: 120px;
+		left: 50%;
+		bottom: 0;
+		margin-left: -60px;
+		color: #a8927b;
+
+		>.news_subscribe {
+			text-decoration: underline;
+		}
+	}
+	
+}
+
+
+// 主体内容
+.main {
+	// padding: 0 10%;
+	margin-top: 30px;
+	text-align: center;
+
+	>.filter {
+
+		>.drop-down {
+			display: inline-block;
+			margin-right: 10px;
+
+			@media screen and (max-width: 991px) {
+				& {
+					margin-top: 10px;
+				}
+			}
+
+			>.input_select {
+				position: relative;
+				
+				>input {
+					cursor: pointer;
+					font-size: 16px;
+					color: #8C7A66;
+					width: 210px;
+					height: 40px;
+					line-height: 40px;
+					padding: 0 30px 0 10px;
+					border: 1px solid #d3d3d3;
+					border-radius: 2px;
+					background-color: #eee;
+				}
+
+				>.icon-arrowdown,
+				>.icon-arrow-up {
+					position: absolute;
+					cursor: pointer;
+					font-size: 24px;
+					color: #8C7A66;
+					right: 9px;
+					top: 9px;
+				}
+			}
+
+			>.inputYears_options,
+			>.inputMonths_options {
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				height: 0;
+				z-index: 5;
+				overflow: hidden;
+				transition: height .3s linear;
+
+				>li {
+					background-color: #eee;
+					color: #8C7A66;
+					padding-left: 10px;
+					width: 242px;
+					line-height: 42px;
+					height: 42px;
+					cursor: pointer;
+					text-align: left;
+
+					&:hover {
+						color: #fff;
+						background-color: #8C7A66;
+					}
+				}
+
+				>.selected {
+					color: #fff;
+					background-color: #8C7A66;
+				}
+			}
+		}
+
+		>.news_close {
+			position: relative;
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			font-size: 40px;
+			color: #a8927b;
+			border: 1px solid #a8927b;
+			cursor: pointer;
+			vertical-align: top;
+			overflow: hidden;
+
+			@media screen and (max-width: 991px) {
+				& {
+					display: none;
+				}
+			}
+
+			&:before {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+			&:hover {
+				color: #fff;
+				background-color: #a8927b;    
+				border: 1px solid #a8927b;
+			}
+		}
+
+	}
+// 手表缩略一览
+	>.watch_wrapper {
+		
+		@media screen and (min-width: 992px) {
+			& {
+				width: 970px;
+				margin: 0 auto;
+			}
+		}
+
+		@media screen and (min-width:768px) and (max-width: 991px) {
+			& {
+				width: 700px;
+				margin: 0 auto;
+			}
+		}
+
+		@media screen and (min-width:551px) and (max-width:767px) {
+			& {
+				width: 500px;
+				margin: 0 auto;
+			}
+		}
+
+		@media screen and (max-width:550px) {
+			& {
+				width: 400px;
+				margin: 0 auto;
+			}
+		}
+
+		>.year {	
+
+			>header {
+				color: #8C7A66;
+				font-size: 30px;
+				font-weight: bold;
+				margin-top: 50px;
+				margin-bottom: 30px;
+			}
+
+			>.watch_thumbnail {
+				float: left;
+				width: 30%;
+				height: 42%;
+				padding: 0 10px;
+
+				@media screen and (min-width:551px) and (max-width:767px) {
+					& {
+						width: 45%;
+					}
+				}
+
+				@media screen and (max-width:550px) {
+					& {
+						width: 100%;
+					}
+				}
+
+				>h3 {
+					font-size: 16px;
+					font-weight: normal;
+				}
+
+				>a {
+					display: block;
+					width: 100%;
+					height: 312/500*100%;
+
+					>img {
+						display: inline-block;
+						width: 100%;
+					}
+				}
+
+				>h2 {
+					font-size: 18px;
+					color: #ab947d;
+					font-weight: normal;
+				}
+
+				>p {
+					margin: 0;
+					color: #463527;
+					font-size: 16px;
+				}
+			}
+
+			>.line {
+				float: left;
+				width: 100%;
+				border-top: 1px solid rgba(168, 146, 123, 0.5);
+				margin: 30px 0;
+				display: none;
+			}
+
+			@media screen and (min-width:768px) {
+				.col_md {
+					display: block;
+				}
+			}
+
+			@media screen and (min-width:551px) and (max-width:767px) {
+				>.col_sm {
+					display: block;
+				}
+			}
+
+			@media screen and (max-width:550px) {
+				>.col_xs {
+					display: block;
+				}
+			}
+		}
+	}
+	
+	> h2 {
+		color: #ab947d;
+		font-weight: normal;
+	}
+
+	
+}
+
+// 订阅
+.subscribe {
+	padding: 0 15%;
+	background-color: #8C7A66;
+	transition: height .8s linear;
+	height: 719px;
+	
+}
+.collapsed {
+	height: 0;
+}
+

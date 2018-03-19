@@ -1,0 +1,514 @@
+div.row-margin{
+    margin:40px 0;
+}
+/*banner*/
+section> .banner_bg{
+    height:auto;
+    color:#fff;
+    padding:0px;
+    position:relative;
+    background:url(../img/product_detail/calatrava_1200.jpg) no-repeat;
+    background-size:cover;
+    min-height:367px;
+}
+section> .banner_bg a{
+    text-decoration: none;
+    color:#fff;
+}
+section> .banner_bg a:hover{
+    text-decoration: underline;
+}
+/*产品详情部分*/
+section .toggle_button img{
+    width:50px;
+    height:50px;
+}
+
+.jewel-img{
+    vertical-align: bottom;
+    padding-top:10%;
+}
+.product-detail{
+    color: #463527;
+}
+.product-detail p{
+    font-size:19px;
+}
+.product-detail .text-container{
+    position:relative;
+    height:auto;
+}
+.product-detail .text-container.hide-height{
+    height:100px;
+    overflow:hidden;
+}
+.product-detail .toggle-cover{
+    height:100px;
+    background-image:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,1));
+    width:100%;
+    position:absolute;
+    bottom:0px;
+}
+.btn-rotate {
+    transform:rotate(180deg);
+}
+
+/*链接按钮部分*/
+.link_btn{
+    display:inline-block;
+    border:1px solid #a8927b;
+    width:259px;
+    height:60px;
+    color:#a8927b;
+    font-size:14px;
+    margin-top:20px;
+}
+.link_btn .link_btn_img{
+    width:45px;
+    display:inline-block;
+    margin:5px
+}
+.link_btn .link_btn_img svg{
+    vertical-align: middle;
+}
+.link_btn .link_btn_text {
+    display:inline-block;
+    height:60px;
+    line-height:60px;
+}
+.link_btn .link_btn_text span{
+    padding:5px 5px 5px 20px;
+    border-left:1px solid #a8927b;
+}
+.link_btn:hover{
+    background:#a8927b;
+    color:#fff;
+}
+.link_btn:hover .link_btn_img svg{
+    fill:#fff;
+}
+.link_btn:hover .link_btn_text span{
+    border-left:1px solid #fff;
+}
+.link_btn_sm{
+    width:60px;
+    height:60px;
+    display:inline-block;
+}
+.link_btn_sm:hover {
+    background:#a8927b
+}
+.link_btn_sm:hover svg{
+    fill:#fff;
+}
+section .img-container{
+    height:auto
+}
+section .img-container img{
+    display:inline-block;
+}
+.padding-none{
+    padding:0
+}
+.orange{
+    color:#F95112;
+}
+.brown{
+    color:#ab947d;
+}
+.caliber-content .caliber-shadow{
+    width: 80%;
+    height: 15%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -10px;
+    position: absolute;
+    background-image: url(../img/product_detail/shadow_caliber.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/*小图展示*/
+.show-sm-pic{
+    position:relative;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+.show-sm-pic .show-pic-container{
+    position:relative;
+    width:100%; 
+    margin:0;
+    padding:0;
+    right:0;
+    transition:all 0.4s linear;
+}
+.show-sm-pic .show-pic-container .show-slide{
+    float:left;
+    width:20%;
+    margin:0;
+    padding:0;
+    position:absolute;
+    cursor: pointer;
+}
+.show-sm-pic .show-pic-container .show-slide img{
+    width:100%;
+}
+.show-sm-pic .show-pic-container .show-slide img:hover{
+    opacity:0.8;
+}
+.show-sm-pic .show-pic-container .slide-1{
+    left:0
+}
+.show-sm-pic .show-pic-container .slide-2{
+    left:20%
+}
+.show-sm-pic .show-pic-container .slide-3{
+    left:40%
+}
+.show-sm-pic .show-pic-container .slide-4{
+    left:60%
+}
+.show-sm-pic .show-pic-container .slide-5{
+    left:80%
+}
+.show-sm-pic .show-pic-container .slide-6{
+    left:100%
+}
+.show-sm-pic .show-pic-container .slide-7{
+    left:120%
+}
+.show-sm-pic .show-pic-container .slide-8{
+    left:140%
+}
+.show-sm-pic .show-pic-container .slide-9{
+    left:160%
+}
+.show-sm-pic .show-pic-container .slide-10{
+    left:180%
+}
+.show-sm-pic .show-pic-container .slide-11{
+    left:200%
+}
+.show-sm-pic .point-ul{
+    list-style: none;
+    width:120px;
+    position: absolute;
+    height:12px;
+    left:44%;
+    bottom:12px;
+}
+.show-sm-pic .point-ul li{
+    height:12px;
+    width:12px;
+    background:#E6E1DB;
+    float:left;
+    margin:5px;
+    border-radius: 50%;
+    position: relative;
+}
+.show-sm-pic .point-ul li.checked{
+    background:#F95112;
+}
+/*大图展示区域*/
+.hide-lg-pic{
+    width:100%;
+    height:100%;
+}
+.hide-lg-pic .aside-sm-pic{
+    width:15%;
+    height:100%;
+    float:left;
+    overflow: hidden;
+    cursor:pointer;
+}
+.hide-lg-pic .aside-sm-pic img{
+    width:100%
+}
+.hide-lg-pic .aside-sm-pic img:hover{
+    opacity:0.8;
+}
+.hide-lg-pic .show-lg-pic{
+    width:85%;
+    height:100%;
+    float:left;
+    overflow:hidden;
+    padding-top:5%;
+    cursor:pointer;
+}
+.hide-lg-pic .show-lg-pic .zoom{
+    position:relative;
+}
+.hide-lg-pic .show-lg-pic img{
+    width:100%;
+    height:100%;
+    vertical-align: middle;
+}
+
+/*其他版本*/
+.other_cotent{
+    color:#fff;
+    background:#8C7A66;
+}
+.other_cotent .img-responsive{
+    margin:auto;
+}
+.other_cotent .second-title{
+   color: #463527
+}
+/*月相显示*/
+.content-moon{
+    background:#e8e5e0;
+}
+.content-moon .title{
+    margin:40px 0;
+}
+input{
+    background:#cac5c1;
+    border:none;
+    outline:none;
+    height:42px;
+    padding-left:20px;
+}
+ .moon-container{
+    width:340px;
+    height:340px;
+    position:relative;
+    margin:0 auto;
+}
+.moon-container>img{
+    position:absolute;
+}
+ .moon-container .star-moon{
+    transition:all 0.3s linear
+}
+.fullmoon-title{
+    width:300px;
+    margin:30px auto 20px;
+
+}
+.fullmoon-date{
+    display:flex;
+    width:300px;
+    flex-wrap:wrap;
+    margin:0 auto
+}
+.fullmoon-date div{
+    width:120px;
+}
+.moonphase-text{
+    padding:30px 100px;
+    font-size: 17px;
+    line-height: 24px;
+    column-count: 2;
+    column-gap: 45px;
+}
+@media screen and (min-width:768px){
+    .floor1 .slide-box{
+        height:450px;
+        overflow:hidden;
+        position: relative;
+    }
+    .floor1 .slide-container{
+        width:300%;
+        position:relative;
+        height: 400px;
+        transition:all 0.5s linear;
+    }
+    .floor1 .slide-container .slide{
+        position:absolute;
+        width:33.333333334%;
+    }
+    .floor1 .slide-container .slide-1{
+        left:0;
+    }
+    .floor1 .slide-container .slide-2{
+        left:33.3333333334%;
+    }
+    .floor1 .slide-container .slide-3{
+        left:66.6666666667%;
+    }
+    .nav-point{
+        margin-bottom:50px;
+    }
+    .nav-point ul{
+        width:150px;
+        margin:auto;
+    }
+    .nav-point ul li{
+        width:15px;
+        height:15px;
+        border-radius:50%;
+        background:#fff;
+        float:left;
+        margin:10px;
+        cursor:pointer;
+    }
+    .nav-point ul li.checked{
+        background:#aaa;
+    }
+    .moonphase-text{
+        padding:30px 100px;
+        font-size: 17px;
+        line-height: 24px;
+        column-count: 2;
+        column-gap: 45px;
+    }
+}
+@media screen and (max-width:767px){
+    .nav-point{
+        display:none;
+    }
+    .floor1 .slide{
+        border-top:1px solid #aaa;
+    }
+    .moonphase-text{
+        padding:30px 100px;
+        font-size: 17px;
+    }
+}
+.label{
+    font-size:14px;
+    width:90px;
+    color:#333;
+    font-weight:normal;
+    display:inline-block;
+    text-align:left;
+}
+.dropdown-list{
+    display:inline-block;
+    margin-bottom:5px;
+    position:relative;
+}
+.dropdown-list input{
+    cursor:pointer;
+}
+.dropdown-list .img{
+    position:absolute;
+    width:20px;
+    top:6px;
+    right:5px;
+    background:#CAC5C1;
+}
+.dropdown-list .dropdown-down.downorup{
+    display:none;
+}
+.dropdown-list ul.values{
+    position:absolute;
+    background:#cac5c1;
+    height:0px;
+    width:100%;
+    overflow:auto;
+    transition:all 0.5s linear;
+    z-index:1;
+    list-style: none;
+    padding:0;
+}
+.dropdown-list ul.values.show{
+    height:120px;
+}
+.dropdown-list ul.values li{
+    height:40px;
+    padding-left:20px;
+    line-height:40px;
+}
+.dropdown-list ul.values li:hover{
+    background:#fff;
+}
+.floor1 .form-menu{
+    border-right:1px solid #ccc;
+}
+.floor1 .dropdown-container{
+    padding:25px;
+    border-bottom:1px solid #ccc
+}
+
+.floor1 .dropdown-list input{
+    width:270px;
+}
+.btns {
+    margin-top:25px;
+}
+.fullmoon-title{
+    width:300px;
+    margin:30px auto 20px;
+
+}
+.fullmoon-date{
+    display:flex;
+    width:300px;
+    flex-wrap:wrap;
+    margin:0 auto
+}
+.fullmoon-date div{
+    width:120px;
+}
+/*月相显示end*/
+/*专业技术*/
+.detail-bg{
+    background:url("../img/product_detail/CaseGemsetting_1200.jpg") no-repeat;
+    background-size:cover;
+    min-height:500px;
+    color:#fff;
+}
+.detail-bg .second-title{
+    color: #939393;
+}
+.detail-bg .rect-detail{
+    border:1px solid #fff;
+    color:#fff;
+    width:240px;
+    height:40px;
+    line-height: 40px;
+    display:inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+.detail-bg .rect-detail:hover{
+    color:#333;
+    background:#fff;
+}
+/*新闻稿模块*/
+.news{
+    color:#666;
+}
+.pdf_btn {
+    display:inline-block;
+    border:1px solid #a8927b;
+    padding:0px 40px 0 30px;
+    height:60px;
+    color:#a8927b;
+    font-size:14px;
+    margin-top:40px;
+}
+.pdf_btn:hover{
+    background:#a8927b;
+    color:#fff;
+
+}
+.pdf_btn .pdf{
+    width:45px;
+    height:45px;
+    margin:5px;
+    display: inline-block;
+    background:url(../img/product_detail/icon_pdf.svg);
+    vertical-align: middle;
+}
+.pdf_btn:hover .pdf{
+    background:url(../img/product_detail/icon_pdf_white.svg)
+}
+.pdf_btn .pdf-text{
+    display: inline-block;
+}
+.pdf_btn .pdf-text span{
+    padding:5px 0 5px 15px;
+    border-left:1px solid #ab947d;
+
+}
+.pdf_btn:hover .pdf-text span{
+    border-left:1px solid #FFF;
+}
+

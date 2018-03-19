@@ -1,0 +1,83 @@
+
+div.row{
+    margin:50px auto;
+}
+section>.banner_bg{
+    height:auto;
+    color:#fff;
+    padding:0px;
+    position:relative;
+    background:url(../img/registration/banner_1600.jpg) no-repeat;
+    background-size:cover;
+}
+section>.banner_bg>.row>.banner_txt{
+    font-size:34px;
+    height:40px;
+    text-align:center;
+    margin:100px 0 50px;
+}
+section>.container>.txts{
+    font-size:16px;
+
+}
+section>.container>.txts p{
+    margin:16px;
+}
+section>.container>.txts a{
+    color:#463527;
+}
+
+
+.title{
+    color:#a8927b;
+    font-size:24px;
+}
+.container>.row>div>i{
+    color:#F95112;
+    font-size:12px;
+}
+.container>form>.form-group{
+    margin-bottom:15px;
+}
+.container>form>.form-group input[type="text"]{
+    font-size: 16px;
+    height: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 0;
+    border:none;
+    outline:none;
+    background-color: #F3EFEC;
+    color: #8B7965;
+    width:100%;
+}
+.container>form>.form-group textarea{
+    border-radius: 0;
+    border:none;
+    outline:none;
+    background-color:#F3EFEC;
+    color:#8B7965;
+    width:100%;
+}
+div.step-container{
+    margin:50px auto 0;
+    background:rgba(255,255,255,0.6);
+
+}
+section>.container-fluid>div.step-container>div{
+    padding:0;
+    margin:0!important;
+}
+div.step-container .step{
+    box-sizing:border-box;
+    color:#494846;
+    display:inline-block;
+    height:100%;
+    width:33%;
+    margin:0;
+    padding:15px 0 ;
+}
+div.step-container .step.current{
+    background:#F95112;
+    color:#fff;
+}

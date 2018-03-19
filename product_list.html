@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/product_list.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/PatekGrid.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header id="header"></header>
+    <section class="section-content">
+        <!--banner图和面包屑-->
+        <div class="container-fluid banner_bg clear">
+            <div class="row">
+                <div class="hidden-xs hidden-sm col-md-12  banner_breadcrumb ">时计系列 &nbsp;&gt;&nbsp; 所有表款</div>
+            </div>
+        </div>
+        <!--搜索-->
+        <div class="container">
+            <div class="row search-row">
+                <div class="col-xs-10  col-sm-3 col-sm-offset-1">
+                    <span class="search-text">请输入系列名</span>
+                </div>
+                <div class="col-xs-10  col-sm-5 search-container" >
+                    <input type="text" class="search" />
+                    <div>
+                        <ul class="list-unstyled down-list">
+                            <li>CALATRAVA 系列</li>
+                            <li>Grand Complication 系列</li>
+                            <li>怀表 系列</li>
+                            <li>NAUTILUS 系列</li>
+                            <li>超级复杂功能时计系列</li>
+                        </ul>
+                    </div>
+                    <span class="glyphicon glyphicon-search  " > </span>
+                    <img src="img/instructions/clear_white_bronze.svg" class="clear_search">
+                </div>
+                <div class="col-xs-10  col-sm-3 text-left">
+
+                </div>
+            </div>
+        </div>
+        <!--动态加载表-->
+        <div class="container">
+            <div class="row product-container">
+                <div class="col-xs-6 col-sm-3">
+                    <div class="img-link">
+                        <a href="">
+                        <img src="img/show/980J_010.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="watch-name ">5327J-001 </div>
+                    <div class="watch-style ">黄金款式</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer"></footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/loadheader.js"></script>
+    <script>
+        $(()=>{
+            $.ajax({
+                type:"GET",
+                url:"http://127.0.0.1:3002/product_list",
+                xhrFilds:{withCredentials:true}
+            }).then(data=>{
+                var html=""
+                for(var item of data){
+                    html+=`<div class="col-xxs-12 col-xs-6 col-sm-3">
+            <div class="img-link">
+                <a href="${item.href}">
+                <img src="${item.pic}" >
+                </a>
+                <div class="watch-name">${item.watch_name} </div>
+            <div class="watch-style">${item.style}</div>
+            </div>
+
+        </div>`
+                }
+                $(".product-container").html(html)
+            })
+
+        })
+        $(()=>{
+            //搜索功能
+            var $input=$(".search")
+            var $ul=$(".down-list")
+            $input.focus(()=>{
+                $ul.height(100)
+            })
+            $input.blur(()=>{
+                $ul.height(0)
+            })
+            $ul.on("click","li",(e)=>{
+                var $tar=$(e.target)
+                $input.val($tar.html())
+            })
+
+            $(".clear_search").click(()=>{
+                $input.val("")
+            })
+
+            $(".glyphicon-search").click(()=>{
+                var vals=$input.val()
+                console.log(vals)
+                if(vals) {
+                    $.ajax({
+                        type: "GET",
+                        url: "http://127.0.0.1:3002/product_list_search",
+                        data: {series: vals},
+                        xhrFilds: {withCredentials: true}
+                    }).then(data => {
+                        var html = ""
+                        for (var item of data) {
+                            html += `<div class="col-xxs-12 col-xs-6 col-sm-3">
+            <div class="img-link">
+                <a href="${item.href}">
+                <img src="${item.pic}" >
+                </a>
+                <div class="watch-name">${item.watch_name} </div>
+            <div class="watch-style">${item.style}</div>
+            </div>
+
+        </div>`
+                            $(".product-container").html(html)
+                        }
+                    })
+                }})
+        })
+    </script>
+</body>
+</html>

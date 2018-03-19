@@ -1,0 +1,55 @@
+<!doctype html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="font/iconfont/iconfont.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/subscribe.css">
+</head>
+<body>
+	<section>
+		<form class="form">
+			<div class="clearfix"><i class="iconfont icon-i-close subscribe_close"></i></div>
+			<h2>百达翡丽新闻通讯</h2>
+			<p>免费注册百达翡丽新闻通讯，了解品牌最新信息。</p>
+			<hr>
+			<p>
+				<span>请填写</span>
+				<span class="quote">(* 必填)</span>
+			</p>
+			<div class="row">
+				<label>姓<sup class="orange">*</sup></label>
+				<input type="text" class="input">
+			</div>
+			<div class="row">
+				<label>名<sup class="orange">*</sup></label>
+				<input type="text" class="input">
+			</div>
+			<div class="row">
+				<label>电子邮箱<sup class="orange">*</sup></label>
+				<input type="text" class="input">
+			</div>
+			<div class="row last">
+				<label></label>
+				<label class="agree">我已阅读并接受隐私条款</label>
+			</div>
+			<hr>
+			<div class="cmds">
+				<a href="#" class="btn reset">重设</a>
+				<a href="#" class="btn sub">订阅</a>
+			</div>
+		</form>
+	</section>
+	<script>
+		window.onload = function() {
+			//是否已经阅读条款单击事件
+			document.querySelector('.agree').addEventListener('click', function() {
+				var isActive = this.classList.contains('active')
+				var reg = /\s*active\s*/
+				if (isActive) this.className = this.className.replace(reg, ' ')
+				else this.className += ' active'
+			})
+		}
+
+	</script>
+</body>
+</html>
